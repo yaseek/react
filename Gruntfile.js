@@ -68,7 +68,7 @@ module.exports = function(grunt) {
     browserify: {
       bundle: {
         dest: 'bundle/bundle.js',
-        src: 'lib/*.js',
+        src: 'lib/**/*.js',
         options: {
           transform: [ 'babelify' ]
         }
