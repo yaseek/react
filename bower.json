@@ -1,0 +1,22 @@
+{
+  "name": "react",
+  "description": "",
+  "main": "main.js",
+  "authors": [
+    "Andrew Babkin <andrey.babkin@vvpgroup.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "~0.14.2",
+    "babel": "*"
+  }
+}
