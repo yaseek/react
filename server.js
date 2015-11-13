@@ -13,12 +13,14 @@ var resources = require('./core/resources');
 // Locals
 var app = express();
 
-app.use(serveStatic(__dirname + '/static'));
+app.use(serveStatic(__dirname + '/static', {
+    index: 'bundled.html'
+}));
 app.use(serveStatic(__dirname + '/bower_components'));
 app.use(serveStatic(__dirname + '/bundle'));
 
 app.use(bodyParser.json());
 
-resources(app);
+//resources(app);
 
 app.listen(8080);
